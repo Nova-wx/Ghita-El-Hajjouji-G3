@@ -1,0 +1,142 @@
+/* Styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Style pour l'en-tête principal */
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Sections */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Style pour les paragraphes */
+p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Style pour l'image */
+img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+    width: 150px;
+    height: auto;
+}
+
+/* Listes de hobbies et objectifs */
+ul, ol {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+li {
+    font-size: 1em;
+    padding: 5px;
+    color: #2c3e50;
+}
+
+/* Tableau d'amis */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+td a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p, li {
+        font-size: 0.9em;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+}

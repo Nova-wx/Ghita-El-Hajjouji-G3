@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Page Personnelle - Ghita El Hajjouji</title>
+       <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Ghita El Hajjouji</h1>
+        <section>
+            <h2>À propos de moi</h2>
+            <p>
+                <p>Je suis Ghita El Hajjouji, j'ai 19 ans, étudiante en troisième année à l'EMSI. Passionnée par le développement et l'informatique, je cherche constamment à apprendre et à évoluer dans ce domaine.</p>
+<img src="IMAGE.HTML.jpeg" alt="Image de Ghita" style="width:200px;height:auto;">
+
+            </p>
+          </section>
+          <section>
+            <h2>Hobbies et Objectifs</h2>
+            <ul>
+                <li>Lecture</li>
+                <li>Musique</li>
+                <li>Voyages</li>
+              </ul>
+              <ol>
+                <li>Apprendre le développement web</li>
+                <li>Améliorer mes compétences en programmation</li>
+                <li>Participer à des projets open source</li>
+              </ol>              
+          </section>
+          <section>
+            <h2>Tableau d'Amis</h2>
+            <table>
+                <tr>
+                  <td>Wissal Lamhal</td>
+                  <td>21</td>
+                  <td>Casablanca</td>
+                  <td><a href="lien_profil">Voir Profil</a></td>
+                </tr>
+                <tr>
+                  <td>Salma Ouahmane</td>
+                  <td>20</td>
+                  <td>Casablanca</td>
+                  <td><a href="lien_profil">Voir Profil</a></td>
+                </tr>
+                <tr>
+                  <td>Nouhaila El Ouraoui</td>
+                  <td>20</td>
+                  <td>Casablanca</td>
+                  <td><a href="lien_profil">Voir Profil</a></td>
+                </tr>
+              </table>
+              
+          </section>
+          <section>
+            <h2>Contactez-moi</h2>
+            <ul>
+                <li>Ghita.Elhajjouji@emsi-edu.ma</li>
+              </ul>
+          </section>
+          <form id="contactForm">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit">Envoyer</button>
+          </form>
+          <script>
+            document.getElementById('contactForm').onsubmit = function(event) {
+              var name = document.getElementById('name').value;
+              var email = document.getElementById('email').value;
+              
+              if (!name || !email) {
+                alert('Veuillez remplir tous les champs.');
+                event.preventDefault();
+              } else {
+                alert('Formulaire soumis avec succès!');
+              }
+            }
+          </script>
+          
+          
+          
+    </body>
+</html>
